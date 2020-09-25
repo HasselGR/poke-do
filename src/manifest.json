@@ -1,0 +1,21 @@
+{
+  "name": "Poke Do",
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "description": "Make your to do list prettier withd PokeDo!",
+  "author": "David Gamboa",
+  "permissions": ["<all_urls>", "storage"],
+  "homepage_url": "https://github.com/HasselGR/poke-do",
+  "icons": {
+    "128": "images/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
